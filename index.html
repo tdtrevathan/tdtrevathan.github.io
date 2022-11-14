@@ -8,6 +8,20 @@
   <title>me</title>
 
 </head>
+<style>
+  #scrollDemo {
+      height: 200px;
+      width: 200px;
+      overflow: auto;
+      background-color: #f0db4f
+  }
+
+  #scrollDemo p {
+      /* show the scrollbar */
+      height: 300px;
+      width: 300px;
+  }
+</style>
   <!--
 <style>
   body{
@@ -80,6 +94,7 @@ woah
   </div>
   -->
 
+
 <div class="slider-wrap">
   <div class="slider">    
     <div class="slider-item">
@@ -93,11 +108,25 @@ woah
       </div>
   
 </div>
+</div>
 
+<div class="output"></div>
 
 
 
 <script src="me.js"></script>
+
+<div class="output"></div>
+<script>
+  const scrollDemo = document.querySelector(".slider-wrap");
+  const output = document.querySelector(".output");
+
+  scrollDemo.addEventListener("scroll", event => {
+      output.innerHTML = `scrollTop: ${scrollDemo.scrollTop} <br>
+                          scrollLeft: ${scrollDemo.scrollLeft + scrollDemo.offsetWidth}`;
+  }, { passive: true });
+
+</script>
 </body>
 
 </html>

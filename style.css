@@ -3,24 +3,29 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
-  scrollbar-width: none;
+  scrollbar-width: 0;
 }
 body{
-  overscroll-behavior-y: none;
+  overscroll-behavior-x: none;
   background-color: black;
-
+  -ms-overflow-style: none;
+  scrollbar-width: 0;
 }
+
 body::-webkit-scrollbar{
   display: none;
 }
+
 .slider-wrap{
   position: fixed;
   top:20%;
   left:10%;
   width:80%;
   height:300px;
-  overflow: hidden;
+  overflow-x: scroll;
+  overflow-y: hidden;
   border: 1px solid black;
+  scrollbar-width: 0;
 }
 
 .slider{
@@ -32,23 +37,26 @@ body::-webkit-scrollbar{
   display: flex;
   will-change: transform;
   background-color: black;
+  scrollbar-width: 0;
 }
 
 .slider-item{
   position: relative;
   flex: 1;
   overflow: hidden;
+  background-color: black;
   left: 125px;
+  scrollbar-width: 0;
 }
 
 .img-div{
   position: relative;
-  left: 1%;
-  top: 2.5%;
+  left: 0;
+  top: 1%;
   width: 50%;
-  height: 98%;
+  height: 100%;
   background-size: cover;
   background-position: left;
-
+  scrollbar-width: 0;
 }
 
