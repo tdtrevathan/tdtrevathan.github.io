@@ -3,13 +3,11 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
-  scrollbar-width: 0;
 }
 body{
   overscroll-behavior-x: none;
-  background-color: black;
+  background-color: gray;
   -ms-overflow-style: none;
-  scrollbar-width: 0;
 }
 
 body::-webkit-scrollbar{
@@ -25,7 +23,6 @@ body::-webkit-scrollbar{
   overflow-x: scroll;
   overflow-y: hidden;
   border: 1px solid black;
-  scrollbar-width: 0;
 }
 
 .slider{
@@ -37,7 +34,6 @@ body::-webkit-scrollbar{
   display: flex;
   will-change: transform;
   background-color: black;
-  scrollbar-width: 0;
 }
 
 .slider-item{
@@ -46,17 +42,14 @@ body::-webkit-scrollbar{
   overflow: hidden;
   background-color: black;
   left: 125px;
-  scrollbar-width: 0;
 }
 
 .img-div{
   position: relative;
   left: 0;
   top: 1%;
-  width: 50%;
+  width: 45%;
   height: 100%;
   background-size: cover;
-  background-position: left;
-  scrollbar-width: 0;
 }
 

@@ -1,7 +1,7 @@
 
 let sliderWrap = document.querySelector('.slider-wrap');
 let slider = document.querySelector('.slider');
-//let clonesWidth;
+let clonesWidth;
 let sliderWidth;
 let clones = [];
 let disableScroll = false;
@@ -44,7 +44,7 @@ function scrollUpdate(){
     scrollPos = getScrollPos();
 
     //if(scrollPos- sliderWrap.offsetWidth >= clonesWidth - 1){
-    if(scrollPos >= clonesWidth - clonesWidth/2/images.length){
+    if(scrollPos >= clonesWidth - clonesWidth/2/images.length - 1){
       sliderWrap.scrollLeft = clonesWidth/2 - clonesWidth/2/images.length;
     }
     else if(scrollPos <= 0){
@@ -76,7 +76,7 @@ function calculateDimensions(){
     output.innerHTML = `sliderWidth: ${sliderWidth}<br>
     offset: ${sliderWrap.offsetWidth}<br>
     clonesWidth: ${clonesWidth}<br>
-    scrollLeft: ${scrollDemo.scrollLeft}<br>
+    scrollLeft: ${sliderWrap.scrollLeft}<br>
     clone-offset: ${clonesWidth - sliderWrap.offsetWidth}`;
 }, { passive: true });
 
