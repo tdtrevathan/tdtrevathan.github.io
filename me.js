@@ -47,7 +47,7 @@ function scrollUpdate(){
     if(scrollPos >= clonesWidth - clonesWidth/2/images.length - 1){
       sliderWrap.scrollLeft = clonesWidth/2 - clonesWidth/2/images.length;
     }
-    else if(scrollPos <= 0){
+    else if(scrollPos <= 1){
 
       sliderWrap.scrollLeft = clonesWidth/2;
 

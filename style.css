@@ -22,7 +22,10 @@ body::-webkit-scrollbar{
   height:300px;
   overflow-x: scroll;
   overflow-y: hidden;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+scrollbar-width: none; /* for Firefox */
   border: 1px solid black;
+
 }
 
 .slider{
@@ -34,6 +37,7 @@ body::-webkit-scrollbar{
   display: flex;
   will-change: transform;
   background-color: black;
+
 }
 
 .slider-item{
@@ -42,6 +46,7 @@ body::-webkit-scrollbar{
   overflow: hidden;
   background-color: black;
   left: 125px;
+
 }
 
 .img-div{
