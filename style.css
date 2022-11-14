@@ -17,9 +17,10 @@ body::-webkit-scrollbar{
   position: fixed;
   top:20%;
   left:10%;
-  width:80%;
+  width:600px;
   height:300px;
   overflow-x: scroll;
+  overflow-y: hidden;
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
 scrollbar-width: none; /* for Firefox */
   border: 1px solid black;

@@ -65,7 +65,7 @@ function scrollUpdate(){
 
 function onLoad(){
   calculateDimensions();
-  document.body.style.height = `${sliderWidth}px`
+  //document.body.style.height = `${sliderWidth}px`
   sliderWrap.scrollLeft = 1;
   scrollUpdate();
 }
