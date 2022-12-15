@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width">
   <link  rel="stylesheet" href="style.css" />
   <title>me</title>
-
+  <script>
+    UnityLoader.instantiate("unityContainer", "Build/WebBuild.json");
+  </script>
 </head>
 <style>
   #scrollDemo {
@@ -109,7 +111,7 @@ woah
   
 </div>
 </div>
-
+<div id="unityContainer" style="width: 1024px; height: 576px; margin: auto"></div>
 <script src="me.js"></script>
 
 </body>
