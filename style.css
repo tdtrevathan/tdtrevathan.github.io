@@ -63,10 +63,12 @@ scrollbar-width: none; /* for Firefox */
   display: flex;
   align-items: center;
   justify-content: center;
+  max-height: 100%;
 }
 .unity-container{
   margin:auto; 
   aspect-ratio: 9/16;
+  height: 100%;
   max-width: 576px; 
   max-height: 1024px;
 }
