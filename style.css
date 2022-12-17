@@ -14,9 +14,9 @@ body::-webkit-scrollbar{
 }
 
 .slider-wrap{
-  position: fixed;
+  position: relative;
   top:20%;
-  left:10%;
+
   width:600px;
   height:300px;
   overflow-x: scroll;

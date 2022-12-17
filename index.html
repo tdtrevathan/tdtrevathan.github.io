@@ -11,8 +11,8 @@
   <header>
 
   </header>
-
-<div class="slider-wrap">
+<div class = "grid-container">
+  <div class="slider-wrap">
   <div class="slider">    
     <div class="slider-item">
       <div class="img-div"></div>
@@ -25,13 +25,14 @@
       </div>
   
   </div>
+  </div>
+  <script src="me.js"></script>
+  <script src="LaserDefender/Build/UnityLoader.js"></script>
+  <script>
+    UnityLoader.instantiate("unityContainer", "LaserDefender/Build/WebBuild.json");
+  </script>
+  <div id="unityContainer"></div>
 </div>
-<script src="me.js"></script>
-<script src="LaserDefender/Build/UnityLoader.js"></script>
-<script>
-  UnityLoader.instantiate("unityContainer", "LaserDefender/Build/WebBuild.json");
-</script>
-<div id="unityContainer"></div>
 </body>
 
 </html>
