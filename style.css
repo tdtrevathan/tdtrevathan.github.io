@@ -6,7 +6,7 @@
 }
 body{
   overscroll-behavior-x: none;
-  background-color: gray;
+  background-color: black;
 }
 
 body::-webkit-scrollbar{
@@ -15,9 +15,8 @@ body::-webkit-scrollbar{
 
 .slider-wrap{
   position: relative;
-
-
   width:100%;
+  max-width: 576px; 
   height:300px;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -32,8 +31,7 @@ scrollbar-width: none; /* for Firefox */
   top: 0;
   left: 0;
   height: 100%;
-  width: 100px;
-  max-width: 576px; 
+  width: 4000px;
   display: flex;
   will-change: transform;
   background-color: black;
@@ -60,6 +58,7 @@ scrollbar-width: none; /* for Firefox */
 .grid-container{
   display: grid;
 }
+
 .grid-item{
   display: flex;
   align-items: center;
