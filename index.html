@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-woah
+
   </header>
 
 <div class="slider-wrap">
@@ -24,11 +24,14 @@ woah
         <div class="img-div"></div>
       </div>
   
+  </div>
 </div>
-</div>
-<a href="/LaserDefender/Build/index.html">LaserDefender</a>
 <script src="me.js"></script>
-
+<script src="LaserDefender/Build/UnityLoader.js"></script>
+<script>
+  UnityLoader.instantiate("unityContainer", "LaserDefender/Build/WebBuild.json");
+</script>
+<div id="unityContainer"></div>
 </body>
 
 </html>
