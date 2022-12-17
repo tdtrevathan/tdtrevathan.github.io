@@ -32,7 +32,8 @@ scrollbar-width: none; /* for Firefox */
   top: 0;
   left: 0;
   height: 100%;
-  width: 4000px;
+  width: 100px;
+  max-width: 576px; 
   display: flex;
   will-change: transform;
   background-color: black;
