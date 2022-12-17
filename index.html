@@ -12,26 +12,30 @@
 
   </header>
 <div class = "grid-container">
-  <div class="slider-wrap">
-  <div class="slider">    
-    <div class="slider-item">
-      <div class="img-div"></div>
+  <div class ="grid-item grid-item1">
+    <div class="slider-wrap">
+      <div class="slider">    
+        <div class="slider-item">
+          <div class="img-div"></div>
+        </div>
+        <div class="slider-item">
+            <div class="img-div"></div>
+          </div>
+        <div class="slider-item">
+            <div class="img-div"></div>
+          </div>
+      
+      </div>
     </div>
-    <div class="slider-item">
-        <div class="img-div"></div>
-      </div>
-    <div class="slider-item">
-        <div class="img-div"></div>
-      </div>
-  
   </div>
-  </div>
+ <div class = "grid-item grid-item2">
   <script src="me.js"></script>
   <script src="LaserDefender/Build/UnityLoader.js"></script>
   <script>
     UnityLoader.instantiate("unityContainer", "LaserDefender/Build/WebBuild.json");
   </script>
-  <div id="unityContainer" style="aspect-ratio: 9/16;"></div>
+  <div id="unityContainer" class="unity-container"></div>
+ </div>
 </div>
 </body>
 
