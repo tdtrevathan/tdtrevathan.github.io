@@ -22,7 +22,7 @@
 }
 
 body{
-    background-color: var(--color-primary);
+    background-color: #191d2d;
     font-family: 'Poppins', sans-serif;
     font-size: 1.1rem;
     color: var(--color-white);
@@ -51,23 +51,33 @@ section{
     padding: 3rem 18rem;
 }
 
-.section{
-    transform: translateY(-100%) scale(0);
-    transition: all .4s ease-in-out;
-    background-color: var(--color-primary);
-}
-//transtion
+//.section{
+//    transform: translateY(-100%) scale(0);
+//    transition: all .4s ease-in-out;
+//}
+//transition
 .sec1{
     display: none;
     transform: tranlateY(0) scale(1);
+    background-color: yellow;
 }
 .sec2{
     display: none;
     transform: tranlateY(0) scale(1);
+    background-color: blue;
 }
 .sec3{
     display: none;
     transform: tranlateY(0) scale(1);
+    background-color: green;
+}
+.sec4{
+    display: none;
+    transform: tranlateY(0) scale(1);
+    background-color:orange;
+}
+.active{
+    display: block;
 }
 //controls
 .controls{
