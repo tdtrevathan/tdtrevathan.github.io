@@ -1,42 +1,39 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <link  rel="stylesheet" href="style.css" />
-  <title>me</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d7bc72e4ae.js" crossorigin="anonymous"></script>
 </head>
-<body>
-  <header>
+<body class="main-content">
+    <!--<i class="fa-brands fa-linkedin"></i>/-->
+    <header class="section sec1 header active"></header>
+    <main>
+        <section class="section sect2 about"></section>
+        <section class="section sect3 portfolio"></section>
+        <section class="section sect4 contact"></section>
+    </main>
 
-  </header>
-<div class = "grid-container">
-  <div class ="grid-item grid-item1">
-    <div class="slider-wrap">
-      <div class="slider">    
-        <div class="slider-item">
-          <div class="img-div"></div>
+    <div class="controls">
+        <div class="control control-1 active-btn">
+            <i class="fa-solid fa-house-chimney"></i>
         </div>
-        <div class="slider-item">
-            <div class="img-div"></div>
-          </div>
-        <div class="slider-item">
-            <div class="img-div"></div>
-          </div>
-
-      </div>
+        <div class="control control-2">
+            <i class="fa-solid fa-computer"></i>
+        </div>
+        <div class="control control-3">
+            <i class="fa-solid fa-envelopes-bulk"></i>
+        </div>
+        <div class="control control-4">
+            <i class="fa-solid fa-person"></i>
+        </div>
     </div>
-  </div>
- <div class = "grid-item grid-item2">
-  <script src="me.js"></script>
-  <script src="LaserDefender/Build/UnityLoader.js"></script>
-  <script>
-    UnityLoader.instantiate("unityContainer", "LaserDefender/Build/WebBuild.json");
-  </script>
-  <div id="unityContainer" class="unity-container"></div>
- </div>
-</div>
+    <script src="app.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link  rel="stylesheet" href="style.css" />
+  <title>me</title>
+</head>
+<body>
+  <header>
+
+  </header>
+<div class = "grid-container">
+  <div class ="grid-item grid-item1">
+    <div class="slider-wrap">
+      <div class="slider">    
+        <div class="slider-item">
+          <div class="img-div"></div>
+        </div>
+        <div class="slider-item">
+            <div class="img-div"></div>
+          </div>
+        <div class="slider-item">
+            <div class="img-div"></div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+ <div class = "grid-item grid-item2">
+  <script src="me.js"></script>
+  <script src="LaserDefender/Build/UnityLoader.js"></script>
+  <script>
+    UnityLoader.instantiate("unityContainer", "LaserDefender/Build/WebBuild.json");
+  </script>
+  <div id="unityContainer" class="unity-container"></div>
+ </div>
+</div>
+</body>
+
+</html>
