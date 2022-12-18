@@ -12,13 +12,20 @@
 </head>
 <body class="main-content">
     <!--<i class="fa-brands fa-linkedin"></i>/-->
-    <header class="section sec1 header active" id="home"></header>
+    <header class="section sec1 header active" id="home">
+        
+    </header>
     <main>
         <section class="section sec2 about" id="about">
 
         </section>
         <section class="section sec3 portfolio" id="portfolio">
-
+            <script src="me.js"></script>
+            <script src="LaserDefender/Build/UnityLoader.js"></script>
+            <script>
+              UnityLoader.instantiate("unityContainer", "LaserDefender/Build/WebBuild.json");
+            </script>
+            <div id="unityContainer" class="unity-container"></div>
         </section>
         <section class="section sec4 contact" id="contact">
 
