@@ -51,33 +51,43 @@ section{
     padding: 3rem 18rem;
 }
 
-//.section{
-//    transform: translateY(-100%) scale(0);
-//    transition: all .4s ease-in-out;
-//}
+.section{
+    transform: translateY(-100%) scale(0);
+    transition: all .4s ease-in-out;
+    background-color: var(--color-primary);
+}
 //transition
 .sec1{
     display: none;
-    transform: tranlateY(0) scale(1);
-    background-color: yellow;
+    transform: translateY(0) scale(1);
+    background-color: cyan;
 }
 .sec2{
     display: none;
-    transform: tranlateY(0) scale(1);
+    transform: translateY(0) scale(1);
     background-color: blue;
 }
 .sec3{
     display: none;
-    transform: tranlateY(0) scale(1);
+    transform: translateY(0) scale(1);
     background-color: green;
 }
 .sec4{
     display: none;
-    transform: tranlateY(0) scale(1);
+    transform: translateY(0) scale(1);
     background-color:orange;
 }
 .active{
     display: block;
+    animation: scaleAnim 1s ease-in-out;
+    @keyframes scaleAnim {
+        0%{
+            transform:translateY(-100%) scale(0)
+        }
+        100%{
+            transform:translateY(0) scale(1)
+        }
+    }
 }
 //controls
 .controls{
@@ -91,7 +101,6 @@ section{
     justify-content: center;
     .active-btn{
         background-color: var(--color-secondary) !important;
-        transition: all .4 ease-in-out;
         i{
             color: var(--color-white) !important;
         }
@@ -115,3 +124,10 @@ section{
         }
     }
 }
+
+.unity-container{
+    margin:auto; 
+    aspect-ratio: 9/16;
+    height: 100%;
+    max-width: 576px; 
+  }
