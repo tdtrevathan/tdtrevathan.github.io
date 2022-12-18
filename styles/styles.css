@@ -54,31 +54,27 @@ section {
 .section{
   transform: translateY(-100%) scaleY(0);
   transition: all .4s ease-in-out;
-  background-color: var(--color-tertiary);
+  background-color: var(--color-primary);
 }
 
 .sec1 {
   display: none;
   transform: translateY(0) scaleY(1);
-  background-color: cyan;
 }
 
 .sec2 {
   display: none;
   transform: translateY(0) scaleY(1);
-  background-color: blue;
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scaleY(1);
-  background-color: green;
 }
 
 .sec4 {
   display: none;
   transform: translateY(0) scaleY(1);
-  background-color: orange;
 }
 
 .active{
@@ -93,7 +89,23 @@ section {
       }
   }
 }
+.unity-container{
+  margin:auto; 
+  aspect-ratio: 9/16;
+  height: 100%;
+  max-width: 576px; 
+}
 
+.grid-container{
+  display: grid;
+}
+
+.grid-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 600px;
+}
 .controls {
   position: fixed;
   z-index: 10;

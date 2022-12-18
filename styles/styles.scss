@@ -51,6 +51,10 @@ section{
     padding: 3rem 18rem;
 }
 
+img {
+    max-width: 100%;
+}
+
 .section{
     transform: translateY(-100%) scale(0);
     transition: all .4s ease-in-out;
@@ -60,33 +64,28 @@ section{
 .sec1{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: cyan;
+
 }
 .sec2{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: blue;
+
 }
 .sec3{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: green;
 }
 .sec4{
     display: none;
     transform: translateY(0) scale(1);
-    background-color:orange;
 }
-.active{
+.active {
     display: block;
-    animation: scaleAnim 1s ease-in-out;
-    @keyframes scaleAnim {
-        0%{
-            transform:translateY(-100%) scale(0)
-        }
-        100%{
-            transform:translateY(0) scale(1)
-        }
+    animation: appear 1s ease-in-out;
+    transform: translateY(0) scaleY(1);
+    @keyframes appear {
+        0%{ transform: translateY(-100%) scaleY(0); }
+        100%{ transform: translateY(0) scaleY(1); }
     }
 }
 //controls
@@ -128,6 +127,24 @@ section{
 .unity-container{
     margin:auto; 
     aspect-ratio: 9/16;
-    height: 100%;
+    height: 600px;
+    width: 300px;
+
     max-width: 576px; 
+  }
+
+  .grid-container{
+    display: grid;
+  }
+  
+  .grid-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 600px;
+  }
+
+  .image{
+    width:100px;
+    height:100px;
   }
