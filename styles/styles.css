@@ -161,28 +161,32 @@ section {
           position: absolute;
           left: 0;
           top: 0;
-          z-index: -1;
           clip-path: polygon(92% 7%, 86% 50%, 94% 94%, 26% 94%, 16% 50%, 23% 7%);
 }
 
 .header-content .left-header .h-shape .image{
       border-radius: var(--br-sm-2);
       height: 100%;
-      width: 60%;
+      width: 70%;
+      padding-left: 40px;
+      padding-top: 30px;
       display: flex;
       align-items: center;
       position: relative;
-      margin-left: 3rem;
       background-color: var(--color-black);
 }
 
-.header-content .left-header .image img{
+.header-content .left-header .h-shape .image img{
   width: 100%;
   height: 100%;
-  padding-top: 1rem;
   object-fit: cover;
+  align-items: center;
   transition: all .4s ease-in-out;
   filter: grayscale(100%);
+}
+
+.header-content .left-header .h-shape .image img:hover{
+  filter: grayscale(0);
 }
 
 .header-content .right-header{

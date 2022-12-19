@@ -15,9 +15,10 @@
     <header class="section sec1 header active" id="home">
         <div class="header-content">
             <div class="left-header">
-                <div class="h-shape"></div>
-                <div class="image">
-                    <img src="images/tim.png" style="width: 125px;" alt="">
+                <div class="h-shape">
+                    <div class="image">
+                        <img src="images/tim.png" alt="">
+                    </div>
                 </div>
             </div>
             <h1 class="right-header">
@@ -30,10 +31,12 @@
                     generated pipelines in Jenkins to streamline testing and ensure product quality. This website is a 
                     showcase of some of my skills as a developer and a place for potential employers to learn more about me.
                 </p>
-                <a href="" class="main-btn">
-                    <span class="btn=text">Download Resume</span>
-                    <span class="btn-icon"><i class="fa-solid fa-scroll"></i></span>
-                </a>
+                <div class="btn-con">
+                    <a href="" class="main-btn">
+                        <span class="btn=text">Download Resume</span>
+                        <span class="btn-icon"><i class="fa-solid fa-scroll"></i></span>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -43,13 +46,14 @@
         </section>
         <section class="section sec3 portfolio" id="portfolio">
             <div class = "grid-container">
-                <div class = "grid-item"></div>
+                <div class = "grid-item">
+                    <script src="LaserDefender/Build/UnityLoader.js"></script>
+                    <script>
+                      UnityLoader.instantiate("unityContainer", "LaserDefender/Build/WebBuild.json");
+                    </script>
+                    <div id="unityContainer" class="unity-container"></div>
+                </div>
             </div>
-            <script src="LaserDefender/Build/UnityLoader.js"></script>
-            <script>
-              UnityLoader.instantiate("unityContainer", "LaserDefender/Build/WebBuild.json");
-            </script>
-            <div id="unityContainer" class="unity-container"></div>
         </section>
         <section class="section sec4 contact" id="contact">
 
