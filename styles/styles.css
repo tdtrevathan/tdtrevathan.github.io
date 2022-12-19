@@ -214,6 +214,11 @@ section {
   line-height: 2rem;
 }
 
+.btn-con{
+  display:flex;
+  align-self:flex-start;
+}
+
 .main-btn{
   border-radius: 30px;
   color: inherit;
@@ -238,5 +243,13 @@ section {
   justify-content: center;
   border-radius: 50%;
   padding: 0.75rem;
+}
+.main-btn .btn-icon::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(-100%);
+  transition: all .4s ease-out;
 }
 /*# sourceMappingURL=styles.css.map */
