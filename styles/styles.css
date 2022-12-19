@@ -89,7 +89,7 @@ section {
   margin:auto; 
   aspect-ratio: 9/16;
   min-width: 300px;
-
+  max-height: 650px;
 }
 
 .grid-container{
@@ -102,7 +102,7 @@ section {
   justify-content: center;
   padding-left: 5rem;
   padding-right: 5rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
 
 }
 .controls {
