@@ -17,7 +17,7 @@
   --color-grey-5: rgb(43, 43, 43);
   --color-grey-6: #1d1d1d;
   --color-tertiary: rgb(100, 34, 130);
-  --br-sm-2: 14px;
+  --br-sm-2: 20px;
   --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
 }
 
@@ -48,7 +48,6 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 3rem 18rem;
 }
 
 .section{
@@ -77,23 +76,20 @@ section {
   transform: translateY(0) scaleY(1);
 }
 
-.active{
+.active {
   display: block;
-  animation: scaleAnim 1s ease-in-out;
-  @keyframes scaleAnim {
-      0%{
-          transform: translateY(-100%) scaleY(0)
-      }
-      100%{
-          transform:translateY(0) scaleY(1)
-      }
+  animation: appear 1s ease-in-out;
+  transform: translateY(0) scaleY(1);
+  @keyframes appear {
+      0%{ transform: translateY(-100%) scaleY(0); }
+      100%{ transform: translateY(0) scaleY(1); }
   }
 }
 .unity-container{
   margin:auto; 
   aspect-ratio: 9/16;
-  height: 100%;
-  max-width: 576px; 
+  min-width: 300px;
+
 }
 
 .grid-container{
@@ -104,7 +100,10 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-height: 600px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 2rem;
+
 }
 .controls {
   position: fixed;
@@ -140,4 +139,94 @@ section {
   font-size: 1.2rem;
   color: var(--color-tertiary);
   pointer-events: none;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+.header-content{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  padding-left: 1rem;
+  padding-right: 4rem;
+}
+.header-content  .left-header{
+      display: flex;
+      align-items: center;
+      position: relative;
+}
+.header-content .left-header .h-shape{
+          transition: all .4s ease-in-out;
+          width: 100%;
+          height: 100%;
+          background-color: var(--color-secondary);
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: -1;
+          clip-path: polygon(92% 7%, 86% 50%, 94% 94%, 26% 94%, 16% 50%, 23% 7%);
+}
+
+.header-content .left-header .h-shape .image{
+      border-radius: var(--br-sm-2);
+      height: 100%;
+      width: 60%;
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin-left: 3rem;
+      background-color: var(--color-black);
+}
+
+.header-content .left-header .image img{
+  width: 100%;
+  height: 100%;
+  padding-top: 1rem;
+  object-fit: cover;
+  transition: all .4s ease-in-out;
+  filter: grayscale(100%);
+}
+
+.header-content .right-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-content .name{
+  font-size: 2rem;
+}
+
+.header-content .name span{
+  color: var(--color-secondary);
+}
+
+.header-content p{
+  margin: 1.5rem 0;
+  line-height: 2rem;
+}
+
+.main-btn{
+  border-radius: 30px;
+  color: inherit;
+  font-weight: 600;
+  position: relative;
+  border: 1px solid var(--color-secondary);
+  display: fles;
+  align-self: flex-start;
+  display:flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.main-btn .btn-text{
+  padding: 0 2rem;
+}
+
+.main-btn .btn-icon{
+  background-color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 0.75rem;
+}
+/*# sourceMappingURL=styles.css.map */
