@@ -207,7 +207,7 @@ section {
   padding-right: 2rem;
 }
 
-.header-content .name{
+.header-content .right-header .name{
   font-size: 2rem;
 }
 
@@ -373,11 +373,60 @@ section {
   width: 35%;
 }
 
+.stat-title{
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 3.5rem 0;
+  position: relative;
+}
 
+.stat-title:before{
+  content: '';
+  left: 0;
+  top: 0;
+  width: 40%;
+  height: 3px;
+  background-color: car(--color-trey-5);
+  transform: translateX(-50%);
+}
 
+.timeline{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 2rem;
+  padding-bottom: 3rem;
+}
 
+.timeline .timeline-item{
+  position: relative;
+  padding-left: 3rem;
+  border-left: 1px solid var(--color-grey-5);
+}
 
+.timeline .timeline-item .tl-icon{
+  position: absolute;
+  left: 10px;
+  top: 0;
+  background-color: var(--color-secondary);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.timeline .timeline-item .tl-icon i{
+  font-size: 1.3rem;
+}
+.timeline .timeline-item .t1-duration{
+  color: var(--color-tertiary);
+}
+
+.timeline .timeline-item .t1-duration span{
+  color: var(--color-pink);
+}
 
 /*independent components*/
 
