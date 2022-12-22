@@ -232,6 +232,8 @@ section {
   grid-template-columns: repeat(2, 1fr);
   padding-top: 3.5rem;
   padding-bottom: 5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .about-container .left-about{
@@ -302,6 +304,8 @@ section {
 
 .about-stats{
   padding-bottom: 4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .about-stats .progress-bars{
@@ -348,9 +352,26 @@ section {
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .html{
+  width: 20%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .Csharp{
   width: 80%;
 }
-
+.about-stats .progress-bars .progress-bar .progress-con .progress .Cplusplus{
+  width: 65%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .Java{
+  width: 10%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .Javascript{
+  width: 5%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .css{
+  width: 15%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .python{
+  width: 35%;
+}
 
 
 
