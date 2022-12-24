@@ -241,7 +241,6 @@ section {
 
 .about-container .left-about p{
   line-height: 2rem;
-  padding: 1rem;
   color: var(--color-grey-1);
   text-align: left;
 }
