@@ -374,13 +374,14 @@ section {
   position: relative;
 }
 
-.stat-title:before{
+.stat-title::before{
   content: '';
-  left: 0;
+  left: 50%;
   top: 0;
   width: 40%;
   height: 3px;
-  background-color: car(--color-trey-5);
+  position: absolute;
+  background-color: var(--color-grey-5);
   transform: translateX(-50%);
 }
 
