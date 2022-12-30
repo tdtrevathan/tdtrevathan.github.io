@@ -686,7 +686,21 @@ section {
   margin-left: 1.5rem;
 }
 
-.contact-content-container .right-contact .input-control input, .contact-content-container .right-contact .input-control textarea{
+.contact-content-container .right-contact .input-control input{
+  border-radius: 20px;
+  font-weight: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  padding: .8rem 1.1rem;
+  outline: none;
+  border: none;
+  background-color: var(--color-grey-5);
+  width: 100%;
+  color: var(--color-white);
+  resize: none;
+}
+
+.contact-content-container .right-contact .input-control textarea{
   border-radius: 20px;
   font-weight: inherit;
   font-family: inherit;
@@ -919,11 +933,11 @@ section {
     margin-top: 2.5rem;
   }
 
-  .contact-content-con .right-contact .i-c-2 {
+  .contact-content-con .right-contact .input-control-2 {
     flex-direction: column;
   }
 
-  .contact-content-con .right-contact .i-c-2 :last-child {
+  .contact-content-con .right-contact .input-control-2:last-child {
     margin-left: 0;
     margin-top: 1.5rem;
   }
