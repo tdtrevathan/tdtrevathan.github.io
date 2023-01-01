@@ -64,7 +64,7 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 3rem 12rem;
+
 }
 
 .section{
@@ -72,6 +72,7 @@ section {
   transform: translateY(-100%) scaleY(0);
   transition: all .4s ease-in-out;
   background-color: var(--color-primary);
+  padding: 3rem 12rem;
 }
 
 .sec1 {
@@ -124,8 +125,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 5rem;
-  padding-right: 5rem;
+
   padding-top: 1rem;
 
 }
@@ -584,6 +584,7 @@ section {
 .contact-content-container{
   display: flex;
   padding-top: 3.5rem;
+
 }
 
 .contact-content-container .left-contact{
@@ -595,6 +596,7 @@ section {
   margin-top: 1rem;
   font-size: 2rem;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .contact-content-container .left-contact p{
@@ -615,12 +617,17 @@ section {
 .contact-content-container .left-contact .contact-info .contact-item p{
   margin: .3rem 0 !important;
   padding: 0 !important;
+  font-size: 1rem;
   color: var(--color-grey-2);
+  padding-left: 5rem;
 }
 
 .contact-content-container .left-contact .contact-info .contact-item .icon{
   display: grid;
-  grid-template-columns: 30px 1fr;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(1 1fr);
+  padding-right: 5rem;
 }
 .contact-content-container .left-contact .contact-info .contact-item .icon i{
   display: flex;
@@ -789,6 +796,7 @@ section {
   font-weight: 800;
   font-size:  6.3rem;
 }
+
 @media screen and (max-width: 600px) {
   header {
     padding: 0 !important;
@@ -920,6 +928,7 @@ section {
   }
 }
 
+
 @media screen and (max-width: 1432px) {
   .section {
     padding: 7rem 11rem;
@@ -965,6 +974,9 @@ section {
 
   .portfolios {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-item{
+    padding: 0 0
   }
 }
 @media screen and (max-width: 1070px) {
