@@ -55,9 +55,8 @@ a {
 header {
   min-height: 100vh;
   color: var(--color-white);
-  overflow: hidden;
-  padding-top: 3.5rem;
-  
+  overflow: hidden; 
+  padding: 3.5rem;
 }
 
 section {
@@ -200,6 +199,8 @@ section {
 .header-content{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding-top: 3.5rem;
+  padding-bottom: 5rem;
 }
 .header-content  .left-header{
       display: flex;
@@ -247,7 +248,6 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 18rem;
 }
 
 .header-content .right-header .name{
@@ -616,6 +616,7 @@ section {
 .contact-content-container .left-contact .contact-info .contact-item p{
   margin: .3rem 0 !important;
   padding: 0 !important;
+  color: var(--color-grey-2);
 }
 
 .contact-content-container .left-contact .contact-info .contact-item .icon{
@@ -900,7 +901,7 @@ section {
   }
   .contact-item p {
     font-size: 15px;
-    color: var(--color-grey-2);
+
   }
   .contact-item span {
     font-size: 15px;
