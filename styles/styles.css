@@ -56,7 +56,6 @@ header {
   min-height: 100vh;
   color: var(--color-white);
   overflow: hidden; 
-  padding: 3.5rem;
 }
 
 section {
@@ -859,7 +858,7 @@ section {
     padding-bottom: 6rem;
   }
 
-  .container {
+  .section {
     padding: 2rem 2.5rem !important;
   }
 
@@ -922,7 +921,7 @@ section {
 }
 
 @media screen and (max-width: 1432px) {
-  .container {
+  .section {
     padding: 7rem 11rem;
   }
 
@@ -987,7 +986,7 @@ section {
   }
 }
 @media screen and (max-width: 970px) {
-  .container {
+  .section {
     padding: 7rem 6rem;
   }
 
@@ -1021,7 +1020,7 @@ section {
   }
 }
 @media screen and (max-width: 700px) {
-  .container {
+  .section {
     padding: 7rem 3rem;
   }
 
